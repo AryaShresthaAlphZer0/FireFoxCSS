@@ -4,6 +4,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap');
 
 /* ============================================
+   TABLISS — GLOW ANIMATIONS
+   ============================================ */
+@keyframes clockGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 10px rgba(0, 229, 200, 0.6),
+      0 0 30px rgba(0, 229, 200, 0.35),
+      0 0 60px rgba(0, 200, 255, 0.2),
+      0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+  50% {
+    text-shadow:
+      0 0 20px rgba(0, 229, 200, 0.9),
+      0 0 50px rgba(0, 229, 200, 0.5),
+      0 0 90px rgba(0, 200, 255, 0.3),
+      0 2px 8px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes searchGlow {
+  0%, 100% {
+    text-shadow:
+      0 0 8px rgba(100, 210, 255, 0.5),
+      0 0 20px rgba(0, 200, 220, 0.2);
+  }
+  50% {
+    text-shadow:
+      0 0 14px rgba(100, 210, 255, 0.8),
+      0 0 35px rgba(0, 200, 220, 0.35);
+  }
+}
+
+/* ============================================
    TABLISS — FROSTED GLASS SEARCH BAR
    ============================================ */
 .Search,
@@ -27,6 +60,10 @@
   letter-spacing: 0.4px !important;
   color: #e8f4ff !important;
   outline: none !important;
+  text-shadow:
+    0 0 8px rgba(100, 210, 255, 0.5),
+    0 0 20px rgba(0, 200, 220, 0.2) !important;
+  animation: searchGlow 3s ease-in-out infinite !important;
   box-shadow:
     0 4px 24px rgba(0, 0, 0, 0.3),
     inset 0 1px 0 rgba(255, 255, 255, 0.1),
@@ -148,10 +185,13 @@
   font-family: 'Inter', 'Space Grotesk', sans-serif !important;
   font-weight: 300 !important;
   letter-spacing: -1px !important;
-  color: rgba(232, 244, 255, 0.92) !important;
+  color: rgba(200, 245, 255, 0.95) !important;
   text-shadow:
-    0 0 40px rgba(100, 200, 255, 0.2),
-    0 2px 8px rgba(0, 0, 0, 0.4) !important;
+    0 0 10px rgba(0, 229, 200, 0.6),
+    0 0 30px rgba(0, 229, 200, 0.35),
+    0 0 60px rgba(0, 200, 255, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.5) !important;
+  animation: clockGlow 3s ease-in-out infinite !important;
 }
 
 [class*="Date"],
