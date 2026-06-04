@@ -1,0 +1,124 @@
+/* ============================================
+   TABLISS — FROSTED GLASS SEARCH BAR
+   ============================================ */
+
+.Search,
+[class*="Search"],
+[class*="search"] {
+  position: relative !important;
+}
+
+.Search input,
+[class*="Search"] input,
+[class*="search"] input {
+  background: rgba(255, 255, 255, 0.07) !important;
+  backdrop-filter: blur(16px) !important;
+  -webkit-backdrop-filter: blur(16px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-radius: 50px !important;
+  padding: 14px 52px 14px 22px !important;
+  font-size: 15px !important;
+  color: #e8f4ff !important;
+  outline: none !important;
+  box-shadow:
+    0 4px 24px rgba(0, 0, 0, 0.25),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+  transition: border-color 0.3s, background 0.3s, box-shadow 0.3s !important;
+}
+
+.Search input::placeholder,
+[class*="Search"] input::placeholder,
+[class*="search"] input::placeholder {
+  color: rgba(200, 220, 255, 0.4) !important;
+}
+
+.Search input:focus,
+[class*="Search"] input:focus,
+[class*="search"] input:focus {
+  background: rgba(255, 255, 255, 0.11) !important;
+  border-color: rgba(100, 200, 230, 0.5) !important;
+  box-shadow:
+    0 4px 32px rgba(0, 0, 0, 0.3),
+    0 0 0 3px rgba(0, 200, 220, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+}
+
+   /*TABLISS — NEON GLOW QUICK LINKS*/
+ 
+
+/* Outer wrapper for each link */
+.Links a,
+[class*="QuickLink"] a,
+[class*="quicklink"] a {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 10px !important;
+  text-decoration: none !important;
+  transition: transform 0.3s !important;
+}
+
+.Links a:hover,
+[class*="QuickLink"] a:hover,
+[class*="quicklink"] a:hover {
+  transform: translateY(-3px) !important;
+}
+
+/* The icon circle */
+.Links a img,
+.Links a svg,
+.Links a [class*="icon"],
+[class*="QuickLink"] a img,
+[class*="QuickLink"] a svg,
+[class*="QuickLink"] a [class*="icon"],
+[class*="quicklink"] a img,
+[class*="quicklink"] a svg,
+[class*="quicklink"] a [class*="icon"] {
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 50% !important;
+  background: rgba(255, 255, 255, 0.05) !important;
+  border: 1.5px solid #00e5c8 !important;
+  padding: 12px !important;
+  box-shadow:
+    0 0 12px rgba(0, 229, 200, 0.5),
+    0 0 28px rgba(0, 229, 200, 0.15),
+    inset 0 0 10px rgba(0, 229, 200, 0.08) !important;
+  transition: box-shadow 0.3s, background 0.3s !important;
+  object-fit: contain !important;
+}
+
+.Links a:hover img,
+.Links a:hover svg,
+.Links a:hover [class*="icon"],
+[class*="QuickLink"] a:hover img,
+[class*="QuickLink"] a:hover svg,
+[class*="QuickLink"] a:hover [class*="icon"] {
+  background: rgba(255, 255, 255, 0.09) !important;
+  box-shadow:
+    0 0 20px rgba(0, 229, 200, 0.7),
+    0 0 50px rgba(0, 229, 200, 0.25),
+    inset 0 0 14px rgba(0, 229, 200, 0.12) !important;
+}
+
+/* Link label text */
+.Links a span,
+.Links a p,
+[class*="QuickLink"] a span,
+[class*="QuickLink"] a p,
+[class*="quicklink"] a span,
+[class*="quicklink"] a p {
+  font-size: 11px !important;
+  letter-spacing: 2px !important;
+  text-transform: uppercase !important;
+  color: rgba(180, 220, 255, 0.5) !important;
+  font-family: 'Courier New', monospace !important;
+  transition: color 0.3s !important;
+}
+
+.Links a:hover span,
+.Links a:hover p,
+[class*="QuickLink"] a:hover span,
+[class*="QuickLink"] a:hover p {
+  color: rgba(200, 235, 255, 0.85) !important;
+}
