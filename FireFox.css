@@ -1,7 +1,11 @@
 /* ============================================
+   TABLISS — GOOGLE FONTS IMPORT
+   ============================================ */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Space+Grotesk:wght@300;400;500&display=swap');
+
+/* ============================================
    TABLISS — FROSTED GLASS SEARCH BAR
    ============================================ */
-
 .Search,
 [class*="Search"],
 [class*="search"] {
@@ -12,41 +16,47 @@
 [class*="Search"] input,
 [class*="search"] input {
   background: rgba(255, 255, 255, 0.07) !important;
-  backdrop-filter: blur(16px) !important;
-  -webkit-backdrop-filter: blur(16px) !important;
-  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(20px) !important;
+  -webkit-backdrop-filter: blur(20px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
   border-radius: 50px !important;
-  padding: 14px 52px 14px 22px !important;
+  padding: 15px 56px 15px 26px !important;
   font-size: 15px !important;
+  font-family: 'Inter', 'Space Grotesk', sans-serif !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.4px !important;
   color: #e8f4ff !important;
   outline: none !important;
   box-shadow:
-    0 4px 24px rgba(0, 0, 0, 0.25),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08) !important;
+    0 4px 24px rgba(0, 0, 0, 0.3),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.1) !important;
   transition: border-color 0.3s, background 0.3s, box-shadow 0.3s !important;
 }
 
 .Search input::placeholder,
 [class*="Search"] input::placeholder,
 [class*="search"] input::placeholder {
-  color: rgba(200, 220, 255, 0.4) !important;
+  color: rgba(200, 220, 255, 0.35) !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.4px !important;
 }
 
 .Search input:focus,
 [class*="Search"] input:focus,
 [class*="search"] input:focus {
   background: rgba(255, 255, 255, 0.11) !important;
-  border-color: rgba(100, 200, 230, 0.5) !important;
+  border-color: rgba(100, 210, 235, 0.55) !important;
   box-shadow:
-    0 4px 32px rgba(0, 0, 0, 0.3),
-    0 0 0 3px rgba(0, 200, 220, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+    0 4px 32px rgba(0, 0, 0, 0.35),
+    0 0 0 3px rgba(0, 200, 220, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.08) !important;
 }
 
-   /*TABLISS — NEON GLOW QUICK LINKS*/
- 
-
-/* Outer wrapper for each link */
+/* ============================================
+   TABLISS — NEON GLOW QUICK LINKS
+   ============================================ */
 .Links a,
 [class*="QuickLink"] a,
 [class*="quicklink"] a {
@@ -55,16 +65,16 @@
   align-items: center !important;
   gap: 10px !important;
   text-decoration: none !important;
-  transition: transform 0.3s !important;
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1) !important;
 }
 
 .Links a:hover,
 [class*="QuickLink"] a:hover,
 [class*="quicklink"] a:hover {
-  transform: translateY(-3px) !important;
+  transform: translateY(-4px) !important;
 }
 
-/* The icon circle */
+/* Icon circle */
 .Links a img,
 .Links a svg,
 .Links a [class*="icon"],
@@ -76,15 +86,17 @@
 [class*="quicklink"] a [class*="icon"] {
   width: 56px !important;
   height: 56px !important;
-  border-radius: 50% !important;
-  background: rgba(255, 255, 255, 0.05) !important;
-  border: 1.5px solid #00e5c8 !important;
+  border-radius: 16px !important;
+  background: rgba(255, 255, 255, 0.06) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(0, 229, 200, 0.4) !important;
   padding: 12px !important;
   box-shadow:
-    0 0 12px rgba(0, 229, 200, 0.5),
-    0 0 28px rgba(0, 229, 200, 0.15),
-    inset 0 0 10px rgba(0, 229, 200, 0.08) !important;
-  transition: box-shadow 0.3s, background 0.3s !important;
+    0 0 10px rgba(0, 229, 200, 0.4),
+    0 0 24px rgba(0, 229, 200, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1) !important;
+  transition: box-shadow 0.3s, background 0.3s, border-color 0.3s !important;
   object-fit: contain !important;
 }
 
@@ -94,11 +106,13 @@
 [class*="QuickLink"] a:hover img,
 [class*="QuickLink"] a:hover svg,
 [class*="QuickLink"] a:hover [class*="icon"] {
-  background: rgba(255, 255, 255, 0.09) !important;
+  background: rgba(0, 229, 200, 0.08) !important;
+  border-color: rgba(0, 229, 200, 0.75) !important;
   box-shadow:
-    0 0 20px rgba(0, 229, 200, 0.7),
-    0 0 50px rgba(0, 229, 200, 0.25),
-    inset 0 0 14px rgba(0, 229, 200, 0.12) !important;
+    0 0 18px rgba(0, 229, 200, 0.65),
+    0 0 48px rgba(0, 229, 200, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15),
+    inset 0 0 12px rgba(0, 229, 200, 0.1) !important;
 }
 
 /* Link label text */
@@ -108,11 +122,12 @@
 [class*="QuickLink"] a p,
 [class*="quicklink"] a span,
 [class*="quicklink"] a p {
-  font-size: 11px !important;
-  letter-spacing: 2px !important;
+  font-family: 'Space Grotesk', 'Inter', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 400 !important;
+  letter-spacing: 2.5px !important;
   text-transform: uppercase !important;
-  color: rgba(180, 220, 255, 0.5) !important;
-  font-family: 'Courier New', monospace !important;
+  color: rgba(180, 220, 255, 0.45) !important;
   transition: color 0.3s !important;
 }
 
@@ -120,5 +135,44 @@
 .Links a:hover p,
 [class*="QuickLink"] a:hover span,
 [class*="QuickLink"] a:hover p {
-  color: rgba(200, 235, 255, 0.85) !important;
+  color: rgba(210, 240, 255, 0.9) !important;
+}
+
+/* ============================================
+   TABLISS — CLOCK & DATE WIDGET
+   ============================================ */
+[class*="Time"],
+[class*="time"],
+[class*="Clock"],
+[class*="clock"] {
+  font-family: 'Inter', 'Space Grotesk', sans-serif !important;
+  font-weight: 300 !important;
+  letter-spacing: -1px !important;
+  color: rgba(232, 244, 255, 0.92) !important;
+  text-shadow:
+    0 0 40px rgba(100, 200, 255, 0.2),
+    0 2px 8px rgba(0, 0, 0, 0.4) !important;
+}
+
+[class*="Date"],
+[class*="date"] {
+  font-family: 'Space Grotesk', 'Inter', sans-serif !important;
+  font-weight: 300 !important;
+  letter-spacing: 3px !important;
+  text-transform: uppercase !important;
+  color: rgba(200, 225, 255, 0.5) !important;
+}
+
+/* ============================================
+   TABLISS — GREETING WIDGET
+   ============================================ */
+[class*="Greeting"],
+[class*="greeting"],
+[class*="Message"],
+[class*="message"] {
+  font-family: 'Inter', 'Space Grotesk', sans-serif !important;
+  font-weight: 300 !important;
+  letter-spacing: 0.5px !important;
+  color: rgba(220, 238, 255, 0.75) !important;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.35) !important;
 }
